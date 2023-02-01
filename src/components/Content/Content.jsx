@@ -148,13 +148,15 @@ const Content = () => {
                     </svg>
                     <p>Studio: </p>
                   </div>
-                  {anime.anime.producers.map((studio, i) => {
-                    return (
-                      <p key={i} className="underline text-sm">
-                        {studio},
-                      </p>
-                    );
-                  })}
+                  <div className="flex gap-1 flex-wrap">
+                    {anime.anime.producers.map((studio, i) => {
+                      return (
+                        <p key={i} className="underline text-sm md:text-md">
+                          {studio},
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
               <hr className="my-6 opacity-20" />
