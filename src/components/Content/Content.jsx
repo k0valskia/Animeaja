@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   const [anime, setAnime] = useState([]);
@@ -236,7 +237,7 @@ const Content = () => {
               />
             </div>
           )
-        ) : null}
+        ) : <Link to="/streaming" className="text-2xl text-center text-white font-bold block underline">Nonton anime disini...</Link>}
       </div>
       <br />
       <br />
