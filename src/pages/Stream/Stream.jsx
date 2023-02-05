@@ -61,9 +61,6 @@ const Stream = () => {
 
   return (
     <div className="max-w-6xl mx-auto pb-10 p-3 md:p-0">
-      <h1 className="text-center font-bold text-white mb-2 md:mb-0">
-        this web still developing... (sorry for the bug)
-      </h1>
       <video id="video" controls className="w-full md:h-[400px] rounded-md" />
       {Array.isArray(episodes) &&
         (episodes.length > 0 ? (
