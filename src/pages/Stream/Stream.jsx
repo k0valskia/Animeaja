@@ -59,8 +59,6 @@ const Stream = () => {
     }
   }, [selectedSource]);
 
-  console.log(anime);
-
   return (
     <div className="max-w-6xl mx-auto pb-10 p-3 md:p-0">
       <h1 className="text-center font-bold text-white mb-2 md:mb-0">
