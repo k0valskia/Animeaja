@@ -237,7 +237,7 @@ const Content = () => {
               />
             </div>
           )
-        ) : <Link to="/streaming" className="text-2xl text-center text-white font-bold block underline">Nonton anime disini...</Link>}
+        ) : null}
       </div>
       <br />
       <br />
