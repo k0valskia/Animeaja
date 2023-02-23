@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 const Content = () => {
   const [anime, setAnime] = useState([]);
@@ -37,6 +36,9 @@ const Content = () => {
           type="text"
           className="w-full rounded-md border-[1px] border-borderCol border-opacity-20 bg-darkBg outline-none text-white text-opacity-60 py-1 px-3"
           placeholder="cari anime..."
+          onKeyDown={(e) =>
+            e.keyCode === 13 ? handleClick(e.target.value) : null
+          }
           onChange={(e) => setKeyword(e.target.value)}
         />
         <button onClick={() => handleClick(keyword)}>
